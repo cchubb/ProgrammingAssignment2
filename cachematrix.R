@@ -1,5 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Contains a set of functions that will calculate the inverse of a matrix and cache the results, for reuse
+##Usage:
+##  mm <- matrix(c(2,3,2,2), 2, 2, byrow = TRUE)
+##  xx <- makeCacheMatrix(mm)
+##  cacheSolve(xx)
 
 # makeCacheMatrix() Returns a list of access methods for managing the matrix x and it's inverse s
 makeCacheMatrix <- function(x = matrix()) {
